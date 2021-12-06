@@ -31,11 +31,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQo-ly-eGd">
-                                <rect key="frame" x="149.5" y="612.5" width="76" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
-                                </buttonConfiguration>
+                                <rect key="frame" x="150.5" y="605" width="74" height="42"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START"/>
                                 <connections>
                                     <action selector="changeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6s-AC-TP5"/>
                                 </connections>
@@ -52,13 +51,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TWh-I8-8My" firstAttribute="top" secondItem="y1N-cP-USz" secondAttribute="bottom" constant="20" id="676-Lm-7SZ"/>
+                            <constraint firstItem="vQY-sd-rAK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="DRG-l2-3xR"/>
                             <constraint firstItem="vQY-sd-rAK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dil-F9-825"/>
-                            <constraint firstItem="TWh-I8-8My" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="PG8-8y-x6W"/>
+                            <constraint firstItem="TWh-I8-8My" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="Pnc-RZ-IYe"/>
+                            <constraint firstItem="y1N-cP-USz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.149925" id="Wg1-Hs-rB3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QQo-ly-eGd" secondAttribute="bottom" constant="20" id="Z6N-Wq-erj"/>
-                            <constraint firstItem="y1N-cP-USz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="bx9-Ha-VIs"/>
                             <constraint firstItem="y1N-cP-USz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="eEc-bw-1b2"/>
                             <constraint firstItem="vQY-sd-rAK" firstAttribute="top" secondItem="TWh-I8-8My" secondAttribute="bottom" constant="20" id="fMs-tm-OVd"/>
-                            <constraint firstItem="vQY-sd-rAK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="jdz-B7-sXY"/>
                             <constraint firstItem="y1N-cP-USz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nF2-xl-Olx"/>
                             <constraint firstItem="TWh-I8-8My" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nms-dN-dQp"/>
                             <constraint firstItem="QQo-ly-eGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rHc-ge-BX9"/>
