@@ -8,16 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    enum SignalColors {
-        case red
-        case orange
-        case green
-    }
     
-    let signalOn: CGFloat = 1.0 
-    let signalOff: CGFloat = 0.3
-    var currentSignal = SignalColors.red
+    private let signalOn: CGFloat = 1.0
+    private let signalOff: CGFloat = 0.3
+    private var currentSignal = SignalColors.red
     
     @IBOutlet var redSignal: UIView!
     @IBOutlet var orangeSignal: UIView!
@@ -52,3 +46,10 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController {
+    private enum SignalColors {
+        case red
+        case orange
+        case green
+    }
+}
