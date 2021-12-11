@@ -24,5 +24,6 @@ class GrettingsViewController: UIViewController {
     
     // MARK: - IB Actions
     @IBAction func logoutButtonPressed() {
+        dismiss(animated: true)
     }
 }
