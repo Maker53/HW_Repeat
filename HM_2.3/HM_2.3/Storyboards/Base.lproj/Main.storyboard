@@ -123,13 +123,12 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
-                                    <action selector="logoutButtonPressed" destination="bhf-Sh-Nt5" eventType="touchUpInside" id="sWw-Vw-IgJ"/>
                                     <segue destination="B4j-um-2iY" kind="unwind" unwindAction="unwindFor:" id="eaI-JP-pO0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uk1-kR-Wwf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.70879383279999997" green="0.63792567710000003" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VM2-DC-WQ6" firstAttribute="centerX" secondItem="8JR-II-yeY" secondAttribute="centerX" id="0IH-xr-j8x"/>
                             <constraint firstItem="uk1-kR-Wwf" firstAttribute="bottom" secondItem="VM2-DC-WQ6" secondAttribute="bottom" constant="60" id="0v1-v5-KV3"/>
