@@ -34,12 +34,6 @@ class LoginViewController: UIViewController {
         greetingsVC.userName = userNameTF.text ?? ""
     }
     
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard let _ = segue.source as? GrettingsViewController else { return }
-        userNameTF.text = ""
-        passwordTF.text = ""
-    }
-    
     // MARK: - IB Actions
     @IBAction func loginButtonPressed() {
         if userNameTF.text != userName || passwordTF.text != password  {
@@ -55,6 +49,12 @@ class LoginViewController: UIViewController {
         sender.tag == 0
         ? showAlert(with: "Oops!🙀", message: "Your User Name is \(userName)")
         : showAlert(with: "Oops!🙀", message: "Your password if \(password)")
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard let _ = segue.source as? GrettingsViewController else { return }
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
 }
 
