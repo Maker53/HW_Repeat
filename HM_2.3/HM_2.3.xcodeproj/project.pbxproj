@@ -13,6 +13,7 @@
 		85E3DD3F2764E97800365AB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E3DD3D2764E97800365AB7 /* Main.storyboard */; };
 		85E3DD412764E97B00365AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E3DD402764E97B00365AB7 /* Assets.xcassets */; };
 		85E3DD442764E97B00365AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E3DD422764E97B00365AB7 /* LaunchScreen.storyboard */; };
+		85E3DD502764F22700365AB7 /* GrettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E3DD4F2764F22700365AB7 /* GrettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		85E3DD402764E97B00365AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85E3DD432764E97B00365AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85E3DD452764E97B00365AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85E3DD4F2764F22700365AB7 /* GrettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GrettingsViewController.swift; path = "HM_2.3/View Controllers/GrettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		85E3DD4C2764E9B200365AB7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				85E3DD4F2764F22700365AB7 /* GrettingsViewController.swift */,
 				85E3DD3B2764E97800365AB7 /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -172,6 +175,7 @@
 			files = (
 				85E3DD3C2764E97800365AB7 /* ViewController.swift in Sources */,
 				85E3DD382764E97800365AB7 /* AppDelegate.swift in Sources */,
+				85E3DD502764F22700365AB7 /* GrettingsViewController.swift in Sources */,
 				85E3DD3A2764E97800365AB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

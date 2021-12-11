@@ -39,6 +39,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <segue destination="bhf-Sh-Nt5" kind="presentation" modalPresentationStyle="fullScreen" id="P2f-Ge-weM"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="7R1-5T-f26">
                                         <rect key="frame" x="6.5" y="66" width="322" height="30"/>
@@ -73,6 +76,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="98"/>
+        </scene>
+        <!--Grettings View Controller-->
+        <scene sceneID="h2t-Vg-n8i">
+            <objects>
+                <viewController id="bhf-Sh-Nt5" customClass="GrettingsViewController" customModule="HM_2_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8JR-II-yeY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="3Kl-qU-4kn">
+                                <rect key="frame" x="103" y="169.5" width="169" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4f-F7-dpM">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvx-2s-1o5">
+                                        <rect key="frame" x="0.0" y="56" width="169" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM2-DC-WQ6">
+                                <rect key="frame" x="152.5" y="571" width="70" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Log Out"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uk1-kR-Wwf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VM2-DC-WQ6" firstAttribute="centerX" secondItem="8JR-II-yeY" secondAttribute="centerX" id="0IH-xr-j8x"/>
+                            <constraint firstItem="uk1-kR-Wwf" firstAttribute="bottom" secondItem="VM2-DC-WQ6" secondAttribute="bottom" constant="60" id="0v1-v5-KV3"/>
+                            <constraint firstItem="3Kl-qU-4kn" firstAttribute="centerX" secondItem="8JR-II-yeY" secondAttribute="centerX" id="Or8-Ln-3rD"/>
+                            <constraint firstItem="3Kl-qU-4kn" firstAttribute="centerY" secondItem="8JR-II-yeY" secondAttribute="centerY" constant="-100" id="kgK-Ei-mB8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ja3-XA-3ZJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWP-IU-gJn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="98"/>
         </scene>
     </scenes>
     <resources>
