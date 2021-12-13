@@ -56,15 +56,47 @@
 		85C352232767075E001A924D /* Personality_Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				85C352242767075E001A924D /* AppDelegate.swift */,
-				85C352262767075E001A924D /* SceneDelegate.swift */,
-				85C352282767075E001A924D /* ViewController.swift */,
-				85C3522A2767075E001A924D /* Main.storyboard */,
-				85C3522D27670762001A924D /* Assets.xcassets */,
-				85C3522F27670762001A924D /* LaunchScreen.storyboard */,
-				85C3523227670763001A924D /* Info.plist */,
+				85C3523A276707A1001A924D /* Storyboards */,
+				85C3523927670795001A924D /* View Controllers */,
+				85C352382767078E001A924D /* App */,
+				85C3523B276707AB001A924D /* Resources */,
 			);
 			path = Personality_Quiz;
+			sourceTree = "<group>";
+		};
+		85C352382767078E001A924D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				85C352242767075E001A924D /* AppDelegate.swift */,
+				85C352262767075E001A924D /* SceneDelegate.swift */,
+				85C3523227670763001A924D /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		85C3523927670795001A924D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85C352282767075E001A924D /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		85C3523A276707A1001A924D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				85C3522A2767075E001A924D /* Main.storyboard */,
+				85C3522F27670762001A924D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		85C3523B276707AB001A924D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85C3522D27670762001A924D /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,10 +323,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T94XUBZ99A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Personality_Quiz/Info.plist;
+				INFOPLIST_FILE = Personality_Quiz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +339,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,10 +352,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T94XUBZ99A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Personality_Quiz/Info.plist;
+				INFOPLIST_FILE = Personality_Quiz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
