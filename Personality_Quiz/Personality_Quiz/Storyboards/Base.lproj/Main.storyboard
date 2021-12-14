@@ -285,7 +285,7 @@
                                 <rect key="frame" x="16" y="303.66666666666669" width="382" height="129"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1T-CO-BMD">
-                                        <rect key="frame" x="110.66666666666669" y="0.0" width="160.66666666666663" height="60"/>
+                                        <rect key="frame" x="110.66666666666667" y="0.0" width="160.66666666666663" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

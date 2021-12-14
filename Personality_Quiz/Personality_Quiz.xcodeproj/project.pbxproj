@@ -13,6 +13,7 @@
 		85C3522C2767075E001A924D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C3522A2767075E001A924D /* Main.storyboard */; };
 		85C3522E27670762001A924D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C3522D27670762001A924D /* Assets.xcassets */; };
 		85C3523127670762001A924D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C3522F27670762001A924D /* LaunchScreen.storyboard */; };
+		85F6DD102768549200E75AB3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F6DD0F2768549200E75AB3 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		85C3522D27670762001A924D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85C3523027670762001A924D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85C3523227670763001A924D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F6DD0F2768549200E75AB3 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8587007D2767C29200E385C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85F6DD0F2768549200E75AB3 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		85C352182767075E001A924D = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		85C352232767075E001A924D /* Personality_Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				8587007D2767C29200E385C4 /* Models */,
 				85C3523A276707A1001A924D /* Storyboards */,
 				85C3523927670795001A924D /* View Controllers */,
 				85C352382767078E001A924D /* App */,
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85C352292767075E001A924D /* ViewController.swift in Sources */,
+				85F6DD102768549200E75AB3 /* Question.swift in Sources */,
 				85C352252767075E001A924D /* AppDelegate.swift in Sources */,
 				85C352272767075E001A924D /* SceneDelegate.swift in Sources */,
 			);
