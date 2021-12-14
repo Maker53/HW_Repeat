@@ -13,7 +13,7 @@ class GrettingsViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
     
     // MARK: - Public Properties
-    var userName = ""
+    var userName: User!
     
     // MARK: - Private Properties
     private let primaryColor = UIColor(red: 210/255, green: 109/255, blue: 128/255, alpha: 1)
@@ -24,7 +24,7 @@ class GrettingsViewController: UIViewController {
         super.viewDidLoad()
         
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        welcomeLabel.text = "Welcome, \(userName)!"
+        welcomeLabel.text = "Welcome, \(userName.name)!"
     }
 }
 

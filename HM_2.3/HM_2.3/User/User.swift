@@ -6,15 +6,19 @@
 //
 
 struct User {
-    let name = "User"
-    let password = "123"
+    let name: String
+    let password: String
     let person: Person
     
     static func getUser() -> User {
-        User(person: Person())
+        User(name: "User", password: "123", person: Person.getPerson())
     }
 }
 
 struct Person {
-    let image = "singletone"
+    let image: String
+    
+    static func getPerson() -> Person {
+        Person(image: "singletone")
+    }
 }
