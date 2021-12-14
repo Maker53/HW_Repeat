@@ -14,8 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Private properties
-    private let userName = "User"
-    private let password = "123"
+    private let user = User.getUser()
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -30,13 +29,19 @@ class LoginViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let greetingsVC = segue.destination as? GrettingsViewController else { return }
-        greetingsVC.userName = userNameTF.text ?? ""
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        viewControllers.forEach { viewController in
+            if let greetingsVC = viewController as? GrettingsViewController {
+                greetingsVC.userName = user.name
+            }
+        }
     }
     
     // MARK: - IB Actions
     @IBAction func loginButtonPressed() {
-        if userNameTF.text != userName || passwordTF.text != password  {
+        if userNameTF.text != user.name || passwordTF.text != user.password  {
             showAlert(
                 with: "Invalid login or password",
                 message: "Please, enter the correct login and password",
@@ -47,8 +52,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func userForgottButtonspressed(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(with: "Oops!🙀", message: "Your User Name is \(userName)")
-        : showAlert(with: "Oops!🙀", message: "Your password if \(password)")
+        ? showAlert(with: "Oops!🙀", message: "Your User Name is \(user.name)")
+        : showAlert(with: "Oops!🙀", message: "Your password if \(user.password)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

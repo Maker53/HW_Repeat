@@ -9,6 +9,10 @@ struct User {
     let name = "User"
     let password = "123"
     let person: Person
+    
+    static func getUser() -> User {
+        User(person: Person())
+    }
 }
 
 struct Person {
