@@ -32,10 +32,10 @@ class LoginViewController: UIViewController {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
         guard let viewControllers = tabBarController.viewControllers else { return }
         
-        viewControllers.forEach { viewController in
-            if let greetingsVC = viewController as? GrettingsViewController {
+        viewControllers.forEach {
+            if let greetingsVC = $0 as? GrettingsViewController {
                 greetingsVC.userName = user
-            } else if let navigationVC = viewController as? UINavigationController {
+            } else if let navigationVC = $0 as? UINavigationController {
                 if let profileVC = navigationVC.topViewController as? ProfileViewController {
                     profileVC.user = user
                 }
