@@ -24,6 +24,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet var greenTextField: UITextField!
     @IBOutlet var blueTextField: UITextField!
     
+    // MARK: - Public Properties
+    var delegate: SettingsViewControllerDelegate!
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -51,6 +53,12 @@ class SettingsViewController: UIViewController {
             setValue(from: sender)
         }
         setColor(for: colorView)
+    }
+    
+    @IBAction func doneButtonPressed() {
+        dismiss(animated: true)
+        view.endEditing(true)
+        delegate.getColor(color: colorView.backgroundColor ?? .red)
     }
 }
 
@@ -127,6 +135,6 @@ extension SettingsViewController {
     }
     
     @objc private func didTapDone() {
-        view.endEditing(true)
+        doneButtonPressed()
     }
 }
