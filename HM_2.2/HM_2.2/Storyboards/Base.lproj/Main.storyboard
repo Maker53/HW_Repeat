@@ -153,12 +153,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpE-bI-pxc">
+                                <rect key="frame" x="183.5" y="786" width="47" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWu-3f-l8L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96880591979999997" green="0.92289485770000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hpE-bI-pxc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Gz-S4-k7Z"/>
                             <constraint firstItem="N24-6x-5qb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="AwG-9Z-AKm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IfQ-mX-BDp" secondAttribute="trailing" constant="40" id="BBO-1f-Bq6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hpE-bI-pxc" secondAttribute="bottom" constant="40" id="F57-46-szb"/>
                             <constraint firstItem="N24-6x-5qb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="MOb-Ci-bC6"/>
                             <constraint firstItem="IfQ-mX-BDp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ZrV-Vw-3XO"/>
                             <constraint firstItem="IfQ-mX-BDp" firstAttribute="top" secondItem="N24-6x-5qb" secondAttribute="bottom" constant="35" id="fZE-VW-Wkx"/>
