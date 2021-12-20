@@ -54,7 +54,7 @@ class SettingsViewController: UIViewController {
     }
 }
 
-// MARK: - TextFieldDidEndEditing
+// MARK: - UITextFieldDelegate
 extension SettingsViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         switch textField {
@@ -69,6 +69,17 @@ extension SettingsViewController: UITextFieldDelegate {
             blueLabel.text = string(from: blueSlider)
         }
         setColor(for: colorView)
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let keybordToolbar = UIToolbar()
+        keybordToolbar.sizeToFit()
+        textField.inputAccessoryView = keybordToolbar
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(didTapDone))
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        
+        keybordToolbar.items = [flexBarButton, doneButton]
     }
 }
 
@@ -113,5 +124,9 @@ extension SettingsViewController {
     
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
+    }
+    
+    @objc private func didTapDone() {
+        view.endEditing(true)
     }
 }
