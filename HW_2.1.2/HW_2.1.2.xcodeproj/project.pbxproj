@@ -24,7 +24,6 @@
 		851A42E8275D056B00F67B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		851A42EB275D056B00F67B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		851A42ED275D056B00F67B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85375EBC275E826B004A62A0 /* -gitIgnore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "-gitIgnore.swift"; path = "../-gitIgnore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +40,6 @@
 		851A42D3275D056800F67B53 = {
 			isa = PBXGroup;
 			children = (
-				85375EBC275E826B004A62A0 /* -gitIgnore.swift */,
 				851A42DE275D056800F67B53 /* HW_2.1.2 */,
 				851A42DD275D056800F67B53 /* Products */,
 			);
