@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		852D20A227738E8F00B74CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D20A127738E8F00B74CFF /* AppDelegate.swift */; };
 		852D20A427738E8F00B74CFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D20A327738E8F00B74CFF /* SceneDelegate.swift */; };
-		852D20A627738E8F00B74CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D20A527738E8F00B74CFF /* ViewController.swift */; };
 		852D20A927738E8F00B74CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852D20A727738E8F00B74CFF /* Main.storyboard */; };
 		852D20AB27738E9700B74CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852D20AA27738E9700B74CFF /* Assets.xcassets */; };
 		852D20AE27738E9700B74CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 852D20AC27738E9700B74CFF /* LaunchScreen.storyboard */; };
+		852D20B62773931000B74CFF /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D20B52773931000B74CFF /* PersonsListViewController.swift */; };
+		852D20B82773933600B74CFF /* PersonsDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D20B72773933600B74CFF /* PersonsDetailListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		852D209E27738E8F00B74CFF /* HW_2.7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_2.7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852D20A127738E8F00B74CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		852D20A327738E8F00B74CFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		852D20A527738E8F00B74CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		852D20A827738E8F00B74CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		852D20AA27738E9700B74CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		852D20AD27738E9700B74CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		852D20AF27738E9700B74CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		852D20B52773931000B74CFF /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		852D20B72773933600B74CFF /* PersonsDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsDetailListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				852D20A127738E8F00B74CFF /* AppDelegate.swift */,
 				852D20A327738E8F00B74CFF /* SceneDelegate.swift */,
-				852D20A527738E8F00B74CFF /* ViewController.swift */,
 				852D20A727738E8F00B74CFF /* Main.storyboard */,
 				852D20AA27738E9700B74CFF /* Assets.xcassets */,
 				852D20AC27738E9700B74CFF /* LaunchScreen.storyboard */,
 				852D20AF27738E9700B74CFF /* Info.plist */,
+				852D20B52773931000B74CFF /* PersonsListViewController.swift */,
+				852D20B72773933600B74CFF /* PersonsDetailListViewController.swift */,
 			);
 			path = HW_2.7;
 			sourceTree = "<group>";
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				852D20A627738E8F00B74CFF /* ViewController.swift in Sources */,
+				852D20B82773933600B74CFF /* PersonsDetailListViewController.swift in Sources */,
 				852D20A227738E8F00B74CFF /* AppDelegate.swift in Sources */,
+				852D20B62773931000B74CFF /* PersonsListViewController.swift in Sources */,
 				852D20A427738E8F00B74CFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
