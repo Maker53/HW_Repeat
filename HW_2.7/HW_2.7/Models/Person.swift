@@ -22,17 +22,19 @@ extension Person {
     static func getPerson() -> [Person] {
         var persons: [Person] = []
         
-        let iterationCount = min(
-            shared.emails.count, shared.names.count,
-            shared.phoneNumbers.count, shared.surnames.count
-        )
+        var names = Set(shared.names)
+        var surnames = Set(shared.surnames)
+        var phoneNumbers = Set(shared.phoneNumbers)
+        var emails = Set(shared.emails)
+        
+        let iterationCount = min(names.count, surnames.count, phoneNumbers.count, emails.count)
         
         for _ in 0..<iterationCount {
             let person = Person(
-                name: shared.names.randomElement() ?? "Error",
-                surname: shared.surnames.randomElement() ?? "Error",
-                phoneNumber: shared.phoneNumbers.randomElement() ?? "Error",
-                email: shared.emails.randomElement() ?? "Error"
+                name: names.removeFirst(),
+                surname: surnames.removeFirst(),
+                phoneNumber: phoneNumbers.removeFirst(),
+                email: emails.removeFirst()
             )
             persons.append(person)
         }
