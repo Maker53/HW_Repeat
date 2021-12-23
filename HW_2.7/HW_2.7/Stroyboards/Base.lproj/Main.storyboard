@@ -25,6 +25,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ztD-9d-5Kq" kind="show" id="bBj-fv-4ca"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -32,11 +35,13 @@
                             <outlet property="delegate" destination="QrB-gQ-Qud" id="6jm-vX-515"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Persons List" id="yTx-2x-xI0"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="yTx-2x-xI0">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="HGS-5h-ZMo"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnr-8T-MGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142.0289855072465" y="39.508928571428569"/>
+            <point key="canvasLocation" x="582" y="38"/>
         </scene>
         <!--Persons List-->
         <scene sceneID="ngR-Nf-ipT">
@@ -54,9 +59,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="ztD-9d-5Kq" kind="show" id="74b-rt-i9a"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -72,7 +74,7 @@
             </objects>
             <point key="canvasLocation" x="2944.9275362318845" y="39.508928571428569"/>
         </scene>
-        <!--Person Info View Controller-->
+        <!--Name Surname-->
         <scene sceneID="h5I-bK-OYh">
             <objects>
                 <viewController id="ztD-9d-5Kq" customClass="PersonInfoViewController" customModule="HW_2_7" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,23 +82,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glX-K7-cDU">
-                                <rect key="frame" x="16" y="96" width="343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Ihz-Ai-D0E">
-                                <rect key="frame" x="16" y="162" width="53" height="75"/>
+                                <rect key="frame" x="16" y="116" width="343" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsH-IR-QSd">
-                                        <rect key="frame" x="0.0" y="0.0" width="53" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3O-v0-Kus">
-                                        <rect key="frame" x="0.0" y="54.5" width="53" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="54.5" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -107,18 +103,20 @@
                         <viewLayoutGuide key="safeArea" id="Cki-mc-mz2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ihz-Ai-D0E" firstAttribute="top" secondItem="glX-K7-cDU" secondAttribute="bottom" constant="30" id="2Ej-uc-N4D"/>
-                            <constraint firstItem="Cki-mc-mz2" firstAttribute="trailing" secondItem="glX-K7-cDU" secondAttribute="trailing" constant="16" id="Cvj-Mj-4Yv"/>
-                            <constraint firstItem="glX-K7-cDU" firstAttribute="top" secondItem="Cki-mc-mz2" secondAttribute="top" id="MJv-8H-PNA"/>
-                            <constraint firstItem="glX-K7-cDU" firstAttribute="leading" secondItem="Cki-mc-mz2" secondAttribute="leading" constant="16" id="VHD-8y-VxA"/>
-                            <constraint firstItem="Ihz-Ai-D0E" firstAttribute="leading" secondItem="Cki-mc-mz2" secondAttribute="leading" constant="16" id="gUr-rR-GTY"/>
+                            <constraint firstItem="Ihz-Ai-D0E" firstAttribute="top" secondItem="Cki-mc-mz2" secondAttribute="top" constant="20" id="Ogy-gb-U3o"/>
+                            <constraint firstItem="Ihz-Ai-D0E" firstAttribute="leading" secondItem="Cki-mc-mz2" secondAttribute="leading" constant="16" id="d30-le-e8c"/>
+                            <constraint firstItem="Cki-mc-mz2" firstAttribute="trailing" secondItem="Ihz-Ai-D0E" secondAttribute="trailing" constant="16" id="pTV-yJ-zI0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hOa-Rm-9VG"/>
+                    <navigationItem key="navigationItem" title="Name Surname" id="hOa-Rm-9VG"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="h3O-v0-Kus" id="BBe-uq-8cq"/>
+                        <outlet property="phoneNumberLabel" destination="JsH-IR-QSd" id="HQE-ii-YkT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AX2-XY-k00" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3817" y="40"/>
+            <point key="canvasLocation" x="1409" y="39"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="g54-cH-uIs">
@@ -158,7 +156,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VkO-pY-mNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392.75362318840581" y="39.508928571428569"/>
+            <point key="canvasLocation" x="-169" y="37"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wjb-j6-MYG">
