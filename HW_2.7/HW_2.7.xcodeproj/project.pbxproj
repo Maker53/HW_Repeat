@@ -17,6 +17,7 @@
 		852D20BA2773965B00B74CFF /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D20B92773965B00B74CFF /* PersonInfoViewController.swift */; };
 		852D20C2277397A100B74CFF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D20C1277397A100B74CFF /* DataManager.swift */; };
 		852D20C4277397AB00B74CFF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852D20C3277397AB00B74CFF /* Person.swift */; };
+		85D73C642774E3E000BE7DA5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D73C632774E3DF00BE7DA5 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		852D20B92773965B00B74CFF /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		852D20C1277397A100B74CFF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		852D20C3277397AB00B74CFF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		85D73C632774E3DF00BE7DA5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				852D20B52773931000B74CFF /* PersonsListViewController.swift */,
 				852D20B72773933600B74CFF /* PersonsDetailListViewController.swift */,
 				852D20B92773965B00B74CFF /* PersonInfoViewController.swift */,
+				85D73C632774E3DF00BE7DA5 /* TabBarViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D73C642774E3E000BE7DA5 /* TabBarViewController.swift in Sources */,
 				852D20BA2773965B00B74CFF /* PersonInfoViewController.swift in Sources */,
 				852D20C2277397A100B74CFF /* DataManager.swift in Sources */,
 				852D20B82773933600B74CFF /* PersonsDetailListViewController.swift in Sources */,

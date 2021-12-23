@@ -10,31 +10,26 @@ import UIKit
 class PersonsListViewController: UITableViewController {
 
     // MARK: - Public Properties
-    let person = Person.getPerson()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+    var persons: [Person]!
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        person.count
+        persons.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        content.text = person[indexPath.row].fullName
+        content.text = persons[indexPath.row].fullName
         cell.contentConfiguration = content
 
         return cell
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        
-        personInfoVC.person = person[indexPath.row]
+        personInfoVC.person = persons[indexPath.row]
     }
 }
