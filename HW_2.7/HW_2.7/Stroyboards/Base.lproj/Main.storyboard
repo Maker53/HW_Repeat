@@ -35,7 +35,7 @@
                             <outlet property="delegate" destination="QrB-gQ-Qud" id="6jm-vX-515"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="0Fu-hF-0Gb">
+                    <tabBarItem key="tabBarItem" title="Contacts" id="0Fu-hF-0Gb">
                         <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
                         <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
@@ -86,7 +86,7 @@
                             <outlet property="delegate" destination="8q8-3o-Mgz" id="OXf-pV-x7e"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="4lf-W1-eSr">
+                    <tabBarItem key="tabBarItem" title="Contacts" id="4lf-W1-eSr">
                         <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
                         <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
@@ -158,12 +158,12 @@
             </objects>
             <point key="canvasLocation" x="986" y="-690"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Persons List-->
         <scene sceneID="wjb-j6-MYG">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Etq-yJ-J3n" customClass="TabBarViewController" customModule="HW_2_7" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Juj-fu-6wh"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="Juj-fu-6wh"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cb1-RK-yMK">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
