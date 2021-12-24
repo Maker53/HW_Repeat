@@ -20,6 +20,7 @@ class PersonsListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
         var content = cell.defaultContentConfiguration()
+        
         content.text = persons[indexPath.row].fullName
         cell.contentConfiguration = content
 
@@ -28,8 +29,9 @@ class PersonsListViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        personInfoVC.person = persons[indexPath.row]
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
+            personInfoVC.person = persons[indexPath.row]
+        }
     }
 }
