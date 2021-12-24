@@ -45,7 +45,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnr-8T-MGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="582" y="38"/>
+            <point key="canvasLocation" x="2492" y="-1179"/>
         </scene>
         <!--Persons List-->
         <scene sceneID="ngR-Nf-ipT">
@@ -96,7 +96,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRl-bk-JTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463" y="37"/>
+            <point key="canvasLocation" x="2492" y="-217"/>
         </scene>
         <!--Name Surname-->
         <scene sceneID="h5I-bK-OYh">
@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Ihz-Ai-D0E">
-                                <rect key="frame" x="16" y="64" width="343" height="75"/>
+                                <rect key="frame" x="16" y="116" width="343" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsH-IR-QSd">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
@@ -140,14 +140,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AX2-XY-k00" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="39"/>
+            <point key="canvasLocation" x="3319" y="-1179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fgf-yr-FAf">
             <objects>
                 <navigationController id="yW0-E2-2P7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JN0-hm-ppt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="JN0-hm-ppt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
