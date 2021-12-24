@@ -5,8 +5,6 @@
 //  Created by Станислав on 22.12.2021.
 //
 
-private let shared = DataManager.shared
-
 struct Person {
     let name: String
     let surname: String
@@ -22,19 +20,19 @@ extension Person {
     static func getPerson() -> [Person] {
         var persons: [Person] = []
         
-        var names = Set(shared.names)
-        var surnames = Set(shared.surnames)
-        var phoneNumbers = Set(shared.phoneNumbers)
-        var emails = Set(shared.emails)
+        let names = DataManager.shared.names.shuffled()
+        let surnames = DataManager.shared.surnames.shuffled()
+        let phoneNumbers = DataManager.shared.phoneNumbers.shuffled()
+        let emails = DataManager.shared.emails.shuffled()
         
         let iterationCount = min(names.count, surnames.count, phoneNumbers.count, emails.count)
         
-        for _ in 0..<iterationCount {
+        for index in 0..<iterationCount {
             let person = Person(
-                name: names.removeFirst(),
-                surname: surnames.removeFirst(),
-                phoneNumber: phoneNumbers.removeFirst(),
-                email: emails.removeFirst()
+                name: names[index],
+                surname: surnames[index],
+                phoneNumber: phoneNumbers[index],
+                email: emails[index]
             )
             persons.append(person)
         }
