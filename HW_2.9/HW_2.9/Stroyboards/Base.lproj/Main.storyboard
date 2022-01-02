@@ -62,7 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="animationLabel" destination="V3i-0O-5RV" id="yuH-F0-tTn"/>
-                        <outlet property="animationView" destination="bac-6M-HKV" id="qL0-Pm-2YO"/>
+                        <outlet property="animationView" destination="bac-6M-HKV" id="ASU-3B-yJd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
