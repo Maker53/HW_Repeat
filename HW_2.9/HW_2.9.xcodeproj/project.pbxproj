@@ -50,6 +50,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		850D0A152781E556009602B1 /* Stroyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8540B9A32781E39100ABF3EF /* Main.storyboard */,
+				8540B9A82781E39300ABF3EF /* LaunchScreen.storyboard */,
+			);
+			path = Stroyboards;
+			sourceTree = "<group>";
+		};
+		850D0A162781E562009602B1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8540B99D2781E39100ABF3EF /* AppDelegate.swift */,
+				8540B99F2781E39100ABF3EF /* SceneDelegate.swift */,
+				8540B9AB2781E39300ABF3EF /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		850D0A172781E596009602B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8540B9A62781E39300ABF3EF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		850D0A182781E59C009602B1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8540B9A12781E39100ABF3EF /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		8540B9912781E39100ABF3EF = {
 			isa = PBXGroup;
 			children = (
@@ -71,13 +106,10 @@
 		8540B99C2781E39100ABF3EF /* HW_2.9 */ = {
 			isa = PBXGroup;
 			children = (
-				8540B99D2781E39100ABF3EF /* AppDelegate.swift */,
-				8540B99F2781E39100ABF3EF /* SceneDelegate.swift */,
-				8540B9A12781E39100ABF3EF /* ViewController.swift */,
-				8540B9A32781E39100ABF3EF /* Main.storyboard */,
-				8540B9A62781E39300ABF3EF /* Assets.xcassets */,
-				8540B9A82781E39300ABF3EF /* LaunchScreen.storyboard */,
-				8540B9AB2781E39300ABF3EF /* Info.plist */,
+				850D0A182781E59C009602B1 /* View Controllers */,
+				850D0A152781E556009602B1 /* Stroyboards */,
+				850D0A172781E596009602B1 /* Resources */,
+				850D0A162781E562009602B1 /* App */,
 			);
 			path = HW_2.9;
 			sourceTree = "<group>";
@@ -88,7 +120,6 @@
 				EA7424CA530721ED04DB771B /* Pods-HW_2.9.debug.xcconfig */,
 				0380A74EAC9890E92BCB49D8 /* Pods-HW_2.9.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -343,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T94XUBZ99A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW_2.9/Info.plist;
+				INFOPLIST_FILE = HW_2.9/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -373,7 +404,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T94XUBZ99A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW_2.9/Info.plist;
+				INFOPLIST_FILE = HW_2.9/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
