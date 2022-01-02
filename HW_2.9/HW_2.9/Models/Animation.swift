@@ -11,16 +11,26 @@ struct Animation {
     let force: Double
     let duration: Double
     let delay: Double
+    
+    var description: String {
+        """
+        Preset: \(animation)
+        Curve: \(curve)
+        Force: \(String(format: "%.2f", force))
+        Duration: \(String(format: "%.2f", duration))
+        Delay: \(String(format: "%.2f", delay))
+        """
+    }
 }
 
 extension Animation {
     static func getAnimation() -> Animation {
-        let preset = DataManager.shared.animation.randomElement() ?? "None"
-        let curve = DataManager.shared.curve.randomElement() ?? "None"
-        let force = Double.random(in: 0.1...2.0)
-        let duration = Double.random(in: 0.5...1.5)
-        let delay = Double.random(in: 0.1...0.3)
-        
-        return Animation(animation: preset, curve: curve, force: force, duration: duration, delay: delay)
+         Animation(
+            animation: DataManager.shared.animation.randomElement() ?? "None",
+            curve: DataManager.shared.curve.randomElement() ?? "None",
+            force: Double.random(in: 0.1...2.0),
+            duration: Double.random(in: 0.5...1.5),
+            delay: Double.random(in: 0.1...0.3)
+         )
     }
 }
