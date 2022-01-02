@@ -13,9 +13,6 @@ class DataManager {
         "wobble", "swing", "flipX", "flipY",
     ]
     let curve = ["spring", "linear", "easeIn", "easeOut"]
-    let force = 0.1...2.0
-    let duration = 0.5...1.5
-    let delay = 0.1...0.3
     
     private init() {}
 }
