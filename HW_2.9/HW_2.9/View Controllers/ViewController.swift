@@ -9,11 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var animationView: UIView!
+    @IBOutlet var animationLabel: UILabel!
+    
+    let animation = Animation.getAnimation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        animationLabel.text = """
+Preset: \(animation.animation)
+Curve: \(animation.curve)
+Force: \(toString(animation.force))
+Duration: \(toString(animation.duration))
+Delay: \(toString(animation.delay))
+"""
     }
 
-
+    @IBAction func runAnimation(_ sender: UIButton) {
+    }
 }
 
+extension ViewController {
+    private func toString(_ double: Double) -> String {
+        String(format: "%.2f", double)
+    }
+}
