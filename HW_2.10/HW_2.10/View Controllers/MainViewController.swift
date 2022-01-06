@@ -39,8 +39,13 @@ class MainViewController: UIViewController {
 
 extension MainViewController {
     private func fetchData(from url: String) {
-        NetworkManager.shared.fetchData(from: url) { randomDog in
-            self.randomDog = randomDog
+        NetworkManager.shared.fetchData(from: url) { result in
+            switch result {
+            case .success(let randomDog):
+                self.randomDog = randomDog
+            case .failure(let error):
+                print(error)
+            }
         }
     }
 }
