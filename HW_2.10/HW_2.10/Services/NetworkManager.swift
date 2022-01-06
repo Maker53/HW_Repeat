@@ -7,16 +7,26 @@
 
 import Foundation
 
+enum NetworkError: Error {
+    case invalidURL
+    case noData
+    case decodingError
+}
+
 class NetworkManager {
     static let shared = NetworkManager()
 
     private init() {}
     
-    func fetchData(from url: String, with completion: @escaping(RandomDog) -> Void) {
-        guard let url = URL(string: url) else { return }
+    func fetchData(from url: String, with completion: @escaping(Result<RandomDog, NetworkError>) -> Void) {
+        guard let url = URL(string: url) else {
+            completion(.failure(.invalidURL))
+            return
+        }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
+                completion(.failure(.noData))
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
@@ -24,10 +34,10 @@ class NetworkManager {
             do {
                 let randomDog = try JSONDecoder().decode(RandomDog.self, from: data)
                 DispatchQueue.main.async {
-                    completion(randomDog)
+                    completion(.success(randomDog))
                 }
-            } catch let error {
-                print(error.localizedDescription)
+            } catch {
+                completion(.failure(.decodingError))
             }
         }.resume()
     }
