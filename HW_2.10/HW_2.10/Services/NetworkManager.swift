@@ -9,10 +9,10 @@ import Foundation
 
 class NetworkManager {
     static let shared = NetworkManager()
-    
+
     private init() {}
     
-    func fetchData(from url: String, with completion: @escaping (RandomDog) -> Void) {
+    func fetchData(from url: String, with completion: @escaping(RandomDog) -> Void) {
         guard let url = URL(string: url) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in

@@ -12,29 +12,35 @@ class MainViewController: UIViewController {
     @IBOutlet var dogImage: UIImageView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
-    var networkRandomDogManager = NetworkRandomDogManager()
+    private var randomDog: RandomDog!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        activityIndicator.startAnimating()
-        activityIndicator.hidesWhenStopped = true
-        
-        networkRandomDogManager.fetchImage { stringURL in
-            guard let imageURL = URL(string: stringURL) else { return }
-            guard let imageData = try? Data(contentsOf: imageURL) else { return }
-            self.dogImage.image = UIImage(data: imageData)
-            self.activityIndicator.stopAnimating()
-        }
+        fetchData(from: Link.randomDogApi.rawValue)
     }
     
-    @IBAction func getDogButton() {
+    @IBAction func getDogButton(sender: UIButton) {
+        sender.setTitle("", for: .normal)
+        
+        activityIndicator.isHidden.toggle()
         activityIndicator.startAnimating()
-        networkRandomDogManager.fetchImage { stringURL in
-            guard let imageURL = URL(string: stringURL) else { return }
-            guard let imageData = try? Data(contentsOf: imageURL) else { return }
-            self.dogImage.image = UIImage(data: imageData)
-            self.activityIndicator.stopAnimating()
+
+        DispatchQueue.global().async {
+            guard let imageData = ImageManager.shared.fetchImage(from: self.randomDog.message) else { return }
+            DispatchQueue.main.async {
+                self.dogImage.image = UIImage(data: imageData)
+                self.activityIndicator.stopAnimating()
+            }
+        }
+        fetchData(from: Link.randomDogApi.rawValue)
+    }
+}
+
+extension MainViewController {
+    private func fetchData(from url: String) {
+        NetworkManager.shared.fetchData(from: url) { randomDog in
+            self.randomDog = randomDog
         }
     }
 }
