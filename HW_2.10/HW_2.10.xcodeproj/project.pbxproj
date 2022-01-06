@@ -14,7 +14,7 @@
 		856820032785BAD900039469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856820022785BAD900039469 /* Assets.xcassets */; };
 		856820062785BAD900039469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856820042785BAD900039469 /* LaunchScreen.storyboard */; };
 		856820142785BCA600039469 /* RandomDogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856820132785BCA600039469 /* RandomDogData.swift */; };
-		856820162785BD1A00039469 /* NetworkRandomDogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856820152785BD1A00039469 /* NetworkRandomDogManager.swift */; };
+		856820162785BD1A00039469 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856820152785BD1A00039469 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		856820052785BAD900039469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		856820072785BADA00039469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		856820132785BCA600039469 /* RandomDogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogData.swift; sourceTree = "<group>"; };
-		856820152785BD1A00039469 /* NetworkRandomDogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRandomDogManager.swift; sourceTree = "<group>"; };
+		856820152785BD1A00039469 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		856820112785BB6600039469 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				856820152785BD1A00039469 /* NetworkRandomDogManager.swift */,
+				856820152785BD1A00039469 /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 				85681FFE2785BAD700039469 /* MainViewController.swift in Sources */,
 				85681FFA2785BAD700039469 /* AppDelegate.swift in Sources */,
 				85681FFC2785BAD700039469 /* SceneDelegate.swift in Sources */,
-				856820162785BD1A00039469 /* NetworkRandomDogManager.swift in Sources */,
+				856820162785BD1A00039469 /* NetworkManager.swift in Sources */,
 				856820142785BCA600039469 /* RandomDogData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
