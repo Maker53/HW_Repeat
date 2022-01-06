@@ -9,11 +9,33 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var dogImage: UIImageView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    
+    var networkRandomDogManager = NetworkRandomDogManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        
+        networkRandomDogManager.fetchImage { stringURL in
+            guard let imageURL = URL(string: stringURL) else { return }
+            guard let imageData = try? Data(contentsOf: imageURL) else { return }
+            self.dogImage.image = UIImage(data: imageData)
+            self.activityIndicator.stopAnimating()
+        }
     }
-
-
+    
+    @IBAction func getDogButton() {
+        activityIndicator.startAnimating()
+        networkRandomDogManager.fetchImage { stringURL in
+            guard let imageURL = URL(string: stringURL) else { return }
+            guard let imageData = try? Data(contentsOf: imageURL) else { return }
+            self.dogImage.image = UIImage(data: imageData)
+            self.activityIndicator.stopAnimating()
+        }
+    }
 }
 

@@ -24,19 +24,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Get dog"/>
+                                <connections>
+                                    <action selector="getDogButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3F-3X-Y0i"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="p5j-cs-cP3">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qWi-aB-6XQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="75f-Y3-aQG"/>
+                            <constraint firstItem="qWi-aB-6XQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.811094" id="Aah-DA-Hs8"/>
+                            <constraint firstItem="p5j-cs-cP3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iq6-jo-c3k"/>
+                            <constraint firstItem="p5j-cs-cP3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LG0-Tl-skl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qWi-aB-6XQ" secondAttribute="trailing" constant="16" id="SPk-EZ-95q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cMs-mk-zJr" secondAttribute="bottom" constant="20" id="l1f-oR-j2r"/>
-                            <constraint firstItem="cMs-mk-zJr" firstAttribute="top" secondItem="qWi-aB-6XQ" secondAttribute="bottom" constant="50" id="n0C-RQ-E5Z"/>
                             <constraint firstItem="qWi-aB-6XQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xWv-eB-uw5"/>
                             <constraint firstItem="cMs-mk-zJr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zK3-93-TnE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="p5j-cs-cP3" id="zQ2-Do-aeS"/>
+                        <outlet property="dogImage" destination="qWi-aB-6XQ" id="ZjA-cN-M9a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
