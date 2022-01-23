@@ -13,7 +13,6 @@
 		85B6777A279D327100A00E84 /* HW_2_13.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85B67778279D327100A00E84 /* HW_2_13.xcdatamodeld */; };
 		85B6777C279D327900A00E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B6777B279D327900A00E84 /* Assets.xcassets */; };
 		85B6777F279D327900A00E84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B6777D279D327900A00E84 /* LaunchScreen.storyboard */; };
-		85B6778C279D3F2900A00E84 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B6778B279D3F2900A00E84 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		85B6777B279D327900A00E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85B6777E279D327900A00E84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85B67780279D327900A00E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85B6778B279D3F2900A00E84 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				85B67773279D327100A00E84 /* TaskListViewController.swift */,
-				85B6778B279D3F2900A00E84 /* TaskViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -182,7 +179,6 @@
 			files = (
 				85B67774279D327100A00E84 /* TaskListViewController.swift in Sources */,
 				85B67770279D327100A00E84 /* AppDelegate.swift in Sources */,
-				85B6778C279D3F2900A00E84 /* TaskViewController.swift in Sources */,
 				85B67772279D327100A00E84 /* SceneDelegate.swift in Sources */,
 				85B6777A279D327100A00E84 /* HW_2_13.xcdatamodeld in Sources */,
 			);

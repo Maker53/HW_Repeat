@@ -46,8 +46,7 @@ class TaskListViewController: UITableViewController {
     }
     
     @objc private func addNewTask() {
-        let taskVC = TaskViewController() 
-        present(taskVC, animated: true)
+        
     }
 }
 
