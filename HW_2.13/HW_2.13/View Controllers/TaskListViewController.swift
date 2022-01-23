@@ -46,7 +46,7 @@ class TaskListViewController: UITableViewController {
     }
     
     @objc private func addNewTask() {
-        
+        showAlert(with: "New task", and: "What do you want to do?")
     }
 }
 
