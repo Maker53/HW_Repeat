@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		85EA4EDA279E682E00D021C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4ED9279E682E00D021C5 /* AppDelegate.swift */; };
 		85EA4EDC279E682E00D021C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EDB279E682E00D021C5 /* SceneDelegate.swift */; };
-		85EA4EDE279E682E00D021C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EDD279E682E00D021C5 /* ViewController.swift */; };
 		85EA4EE1279E682E00D021C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EA4EDF279E682E00D021C5 /* Main.storyboard */; };
 		85EA4EE4279E682E00D021C5 /* HW_2_14.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EE2279E682E00D021C5 /* HW_2_14.xcdatamodeld */; };
 		85EA4EE6279E683000D021C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85EA4EE5279E683000D021C5 /* Assets.xcassets */; };
 		85EA4EE9279E683000D021C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EA4EE7279E683000D021C5 /* LaunchScreen.storyboard */; };
+		85EA4EF6279E69D600D021C5 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EF5279E69D600D021C5 /* TaskListViewController.swift */; };
+		85EA4EF8279E69EA00D021C5 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EF7279E69EA00D021C5 /* TasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85EA4ED6279E682E00D021C5 /* HW_2.14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_2.14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85EA4ED9279E682E00D021C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85EA4EDB279E682E00D021C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85EA4EDD279E682E00D021C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85EA4EE0279E682E00D021C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85EA4EE3279E682E00D021C5 /* HW_2_14.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HW_2_14.xcdatamodel; sourceTree = "<group>"; };
 		85EA4EE5279E683000D021C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85EA4EE8279E683000D021C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85EA4EEA279E683000D021C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85EA4EF5279E69D600D021C5 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		85EA4EF7279E69EA00D021C5 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,8 @@
 		85EA4EF2279E689300D021C5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				85EA4EDD279E682E00D021C5 /* ViewController.swift */,
+				85EA4EF5279E69D600D021C5 /* TaskListViewController.swift */,
+				85EA4EF7279E69EA00D021C5 /* TasksViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -182,7 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				85EA4EE4279E682E00D021C5 /* HW_2_14.xcdatamodeld in Sources */,
-				85EA4EDE279E682E00D021C5 /* ViewController.swift in Sources */,
+				85EA4EF6279E69D600D021C5 /* TaskListViewController.swift in Sources */,
+				85EA4EF8279E69EA00D021C5 /* TasksViewController.swift in Sources */,
 				85EA4EDA279E682E00D021C5 /* AppDelegate.swift in Sources */,
 				85EA4EDC279E682E00D021C5 /* SceneDelegate.swift in Sources */,
 			);
