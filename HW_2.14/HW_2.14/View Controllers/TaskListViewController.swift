@@ -48,7 +48,7 @@ class TaskListViewController: UITableViewController {
         }
         
         let editAction = UIContextualAction(style: .normal, title: "Edit") { _, _, isDone in
-            
+            // alert controller
         }
         
         let doneAction = UIContextualAction(style: .normal, title: "Done") { _, _, isDone in
@@ -63,8 +63,20 @@ class TaskListViewController: UITableViewController {
         return UISwipeActionsConfiguration(actions: [doneAction, editAction, deleteAction])
     }
     
-    // MARK: - Private Methods
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        guard let tasksVC = segue.destination as? TasksViewController else { return }
+        let taskList = taskLists[indexPath.row]
+        tasksVC.taskList = taskList
+    }
+    
+    @IBAction func sortingList(_ sender: UISegmentedControl) {
+    }
+    
     @objc private func addButtonPressed() {
-        
+        // alert controller
     }
 }
+
+// MARK: - Private Methods
