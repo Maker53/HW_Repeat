@@ -17,6 +17,7 @@
 		85EA4EF8279E69EA00D021C5 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EF7279E69EA00D021C5 /* TasksViewController.swift */; };
 		85EA4EFB279F161000D021C5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EFA279F161000D021C5 /* Task.swift */; };
 		85EA4EFE279F17FE00D021C5 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EFD279F17FE00D021C5 /* StorageManager.swift */; };
+		85EA4F00279F195000D021C5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EFF279F195000D021C5 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		85EA4EF7279E69EA00D021C5 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		85EA4EFA279F161000D021C5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		85EA4EFD279F17FE00D021C5 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		85EA4EFF279F195000D021C5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				85EA4EFD279F17FE00D021C5 /* StorageManager.swift */,
+				85EA4EFF279F195000D021C5 /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85EA4EE4279E682E00D021C5 /* HW_2_14.xcdatamodeld in Sources */,
+				85EA4F00279F195000D021C5 /* DataManager.swift in Sources */,
 				85EA4EF6279E69D600D021C5 /* TaskListViewController.swift in Sources */,
 				85EA4EF8279E69EA00D021C5 /* TasksViewController.swift in Sources */,
 				85EA4EFE279F17FE00D021C5 /* StorageManager.swift in Sources */,
