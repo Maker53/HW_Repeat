@@ -15,6 +15,7 @@
 		85EA4EE9279E683000D021C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EA4EE7279E683000D021C5 /* LaunchScreen.storyboard */; };
 		85EA4EF6279E69D600D021C5 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EF5279E69D600D021C5 /* TaskListViewController.swift */; };
 		85EA4EF8279E69EA00D021C5 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EF7279E69EA00D021C5 /* TasksViewController.swift */; };
+		85EA4EFB279F161000D021C5 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA4EFA279F161000D021C5 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		85EA4EEA279E683000D021C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85EA4EF5279E69D600D021C5 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		85EA4EF7279E69EA00D021C5 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		85EA4EFA279F161000D021C5 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		85EA4ED8279E682E00D021C5 /* HW_2.14 */ = {
 			isa = PBXGroup;
 			children = (
+				85EA4EF9279F15FE00D021C5 /* Models */,
 				85EA4EF0279E687C00D021C5 /* App */,
 				85EA4EF2279E689300D021C5 /* View Controllers */,
 				85EA4EF1279E688800D021C5 /* StoryBoards */,
@@ -111,6 +114,14 @@
 				85EA4EE2279E682E00D021C5 /* HW_2_14.xcdatamodeld */,
 			);
 			path = "Storage Manager";
+			sourceTree = "<group>";
+		};
+		85EA4EF9279F15FE00D021C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85EA4EFA279F161000D021C5 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				85EA4EF6279E69D600D021C5 /* TaskListViewController.swift in Sources */,
 				85EA4EF8279E69EA00D021C5 /* TasksViewController.swift in Sources */,
 				85EA4EDA279E682E00D021C5 /* AppDelegate.swift in Sources */,
+				85EA4EFB279F161000D021C5 /* Task.swift in Sources */,
 				85EA4EDC279E682E00D021C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
