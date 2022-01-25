@@ -48,7 +48,10 @@ class TaskListViewController: UITableViewController {
         }
         
         let editAction = UIContextualAction(style: .normal, title: "Edit") { _, _, isDone in
-            // alert controller
+            self.showAlert(with: taskList) {
+                self.tableView.reloadRows(at: [indexPath], with: .automatic)
+            }
+            isDone(true)
         }
         
         let doneAction = UIContextualAction(style: .normal, title: "Done") { _, _, isDone in
@@ -75,8 +78,32 @@ class TaskListViewController: UITableViewController {
     }
     
     @objc private func addButtonPressed() {
-        // alert controller
+        showAlert()
     }
 }
 
 // MARK: - Private Methods
+extension TaskListViewController {
+    private func showAlert(with taskList: TaskList? = nil, completion: (() -> Void)? = nil) {
+        let title = taskList != nil ? "Edit list" : "New list"
+        let alert = UIAlertController.createAlert(withTitle: title, andMessage: "Set title for new task list")
+        
+        alert.action(with: taskList) { newValue in
+            if let taskList = taskList, let completion = completion {
+                StorageManager.shared.edit(taskList, newValue: newValue)
+                completion()
+            } else {
+                self.save(taskListTitle: newValue)
+            }
+        }
+        present(alert, animated: true)
+    }
+    
+    private func save(taskListTitle: String) {
+        let taskList = TaskList()
+        taskList.name = taskListTitle
+        taskLists.append(taskList)
+        let rowIndex = IndexPath(row: taskLists.count - 1, section: 0)
+        tableView.insertRows(at: [rowIndex], with: .automatic)
+    }
+}
